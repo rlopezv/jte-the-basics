@@ -1,7 +1,10 @@
 package libraries.maven
 
 void call(){
-
+stage("Maven") {
+            String command = "mvn -v"
+            sh command
+   }
 }
 
 void run(Map params = [:], ArrayList<String> phases) {
