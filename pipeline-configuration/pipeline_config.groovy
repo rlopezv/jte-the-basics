@@ -2,7 +2,7 @@
     sonarqube
 }
 
-@merge application_environments{
+@override application_environments{
   dev {
       long_name = "dev"
    }
