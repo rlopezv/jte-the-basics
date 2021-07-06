@@ -3,6 +3,7 @@
 }
 
 application_environments{
+  merge = true
   dev {
       long_name = "dev"
    }
