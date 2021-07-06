@@ -4,6 +4,7 @@ jte{
 
 @merge libraries{
     sonarqube
+    git
 }
 
 @override application_environments{
