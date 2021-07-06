@@ -1,8 +1,6 @@
 @Init
 void call(){
-    stage("Splunk") {
-    withEnv(['test=asd']){
-        
+    node {
         sh 'java -version'
     }
     }
