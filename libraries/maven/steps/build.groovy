@@ -1,3 +1,5 @@
+package libraries.maven
+
 void call(app_env){
     stage("Maven: Build"){
         withMaven(maven: config.mavenId) {
