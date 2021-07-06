@@ -2,8 +2,7 @@
     sonarqube
 }
 
-application_environments{
-  merge = true
+@merge application_environments{
   dev {
       long_name = "dev"
    }
