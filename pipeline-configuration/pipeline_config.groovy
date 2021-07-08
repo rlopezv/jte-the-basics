@@ -1,4 +1,6 @@
 @merge libraries{
+    config
+    logs
     sonarqube
 }
 
@@ -17,4 +19,8 @@ stages{
         build
         static_code_analysis
     }
+}
+
+ketywords {
+    
 }
