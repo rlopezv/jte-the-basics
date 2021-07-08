@@ -6,7 +6,7 @@ void call(){
         sh 'java -version'
     }
     
-    conf = JsonOutput.prettyPrint(JsonOutput.toJson(dev))
+    conf = JsonOutput.toJson(dev)
 
     println "echo ${conf}"
 
