@@ -6,9 +6,9 @@ void call(){
         sh 'java -version'
     }
     
-    conf = JsonOutput.toJson(dev)
+    def conf = dev
 
-    println "echo ${conf}"
+    conf.each { println "Code: $it.key = Value: $it.value" }
 
     println "echo ${dev.long_name}"
     println "Beginning of the pipeline!"
