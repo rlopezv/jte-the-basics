@@ -19,9 +19,6 @@ stages{
         build
         static_code_analysis
     }
-    publish() {
-        publish
-    }
 }
 
 @override keywords {
