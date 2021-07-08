@@ -21,6 +21,6 @@ stages{
     }
 }
 
-keywords {
+@override keywords {
   logEnabled = false  
 }
