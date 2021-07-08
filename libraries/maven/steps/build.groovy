@@ -1,5 +1,5 @@
 void call(app_env){
     stage("Maven: Build"){
-        println "build from the maven library tenant"
+        println "build from the maven library parent"
     }
 }
