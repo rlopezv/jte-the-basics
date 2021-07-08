@@ -21,6 +21,6 @@ stages{
     }
 }
 
-ketywords {
-    
+keywords {
+  logEnabled = false  
 }
