@@ -1,9 +1,6 @@
-@Init
+@CleanUp
 void call(){
-    node {
-        sh 'java -version'
-    }
-    println "Beginning of the pipeline!"
+    println "End of the pipeline!"
 }
 
 
