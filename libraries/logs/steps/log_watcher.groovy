@@ -1,11 +1,15 @@
 @BeforeStep
 void before(){
-    println "Running before the ${hookContext.library} library's ${hookContext.step} step"
+    if (logEnabled) {
+        println "Running before the ${hookContext.library} library's ${hookContext.step} step"
+    }
 }
 
 @AfterStep
 void after(){
-    println "Running after the ${hookContext.library} library's ${hookContext.step} step"
+    if (logEnabled) {
+        println "Running after the ${hookContext.library} library's ${hookContext.step} step"
+    }
 }
 
 
