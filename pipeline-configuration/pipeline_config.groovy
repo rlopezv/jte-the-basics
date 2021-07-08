@@ -22,5 +22,5 @@ stages{
 }
 
 keywords {
-    logEnabled = true
+    logEnabled = false
 }
