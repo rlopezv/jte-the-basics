@@ -6,7 +6,7 @@ void call(){
         sh 'java -version'
     }
 
-    println "echo ${dev}"
+    println "echo ->${dev}"
 
 
     println "echo ${dev.long_name}"
