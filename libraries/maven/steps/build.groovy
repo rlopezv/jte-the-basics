@@ -7,7 +7,7 @@ void call(app_env){
         withMaven {
             sh "mvn -v"
         }
-        withGradle ( gradleId: "gradle") {
+        withGradle ( gradle: "gradle") {
             sh "gradle -v"
         }
     }
