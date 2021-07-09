@@ -1,6 +1,7 @@
 @merge libraries{
     config
     logs
+    git
     sonarqube
 }
 
