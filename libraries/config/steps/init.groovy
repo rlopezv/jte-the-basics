@@ -4,10 +4,10 @@ import groovy.json.JsonOutput
 void call(){
     node {
         sh 'java -version'
-    }
+    checkout scm
 
     println "echo ->${dev}"
-
+    
     pipelineConfig.message = "message"
     println "echo ${pipelineConfig}"
     println "echo ${dev.long_name}"
