@@ -8,7 +8,7 @@ void call(app_env){
             sh "mvn -v"
         }
         withGradle ( gradle: "gradle") {
-            sh "gradle -v"
+            sh "/opt/gradle/gradle-6.8/bin/gradle -v"
         }
     }
     }
