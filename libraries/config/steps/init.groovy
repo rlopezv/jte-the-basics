@@ -5,7 +5,7 @@ void call(){
     node {
         sh 'java -version'
     checkout scm
-
+    }
     println "echo ->${dev}"
     
     pipelineConfig.message = "message"
