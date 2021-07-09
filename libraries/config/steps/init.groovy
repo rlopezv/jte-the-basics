@@ -8,6 +8,7 @@ void call(){
 
     println "echo ->${dev}"
 
+    pipelineConfig.message = "message"
     println "echo ${pipelineConfig}"
     println "echo ${dev.long_name}"
     println "Beginning of the pipeline!"
