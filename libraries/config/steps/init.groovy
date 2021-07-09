@@ -8,7 +8,7 @@ void call(){
     }
     println "echo ->${dev}"
     
-    pipelineConfig.message = "message"
+    pipelineConfig.currentBranch = scm.branches[0].name
     println "echo ${pipelineConfig}"
     println "echo ${dev.long_name}"
     println "Beginning of the pipeline!"
