@@ -1,5 +1,5 @@
 void call(Map args = [:], body){
-
+  node {
   println "_________________________________"
   println "env"
   if (isUnix()) {
@@ -25,5 +25,5 @@ void call(Map args = [:], body){
   
   println "running because of a commit to ${branch}"
   body()
-  
+  }
 }
