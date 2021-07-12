@@ -1,8 +1,15 @@
 void call(Map args = [:], body){
 
   println "_________________________________"
+  println "env"
+  if (isUnix()) {
+    sh env
+  }
+  else {
+    bat set
+  }
   println "onCommit ${args}"
-  println "env ${env}"
+
   println "_________________________________"
   
   // do nothing if not commit
