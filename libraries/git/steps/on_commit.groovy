@@ -2,6 +2,7 @@ void call(Map args = [:], body){
 
   println "_________________________________"
   println "onCommit ${args}"
+  println "env ${env}"
   println "_________________________________"
   
   // do nothing if not commit
