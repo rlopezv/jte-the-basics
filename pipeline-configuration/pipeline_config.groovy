@@ -4,6 +4,14 @@
     sonarqube
 }
 
+steps{
+    docker_test{
+        stage = "Unit Test"
+        image = "maven"
+        command = "mvn -v"
+    }
+}
+
 @override application_environments{
   dev {
       long_name = "dev"
@@ -16,6 +24,7 @@
 
 stages{
     continuous_integration{
+        docker_test
         build
         static_code_analysis
     }
