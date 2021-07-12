@@ -1,1 +1,5 @@
 continuous_integration()
+
+on_merge to: feature, {
+  deploy_to prod
+}
