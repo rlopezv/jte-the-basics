@@ -32,4 +32,5 @@ stages{
 
 keywords {
     logEnabled = false
+    feature = 'overrides'
 }
