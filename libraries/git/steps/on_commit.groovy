@@ -2,12 +2,9 @@ void call(Map args = [:], body){
   node {
   println "_________________________________"
   println "env"
-  if (isUnix()) {
-    sh env
-  }
-  else {
-    bat set
-  }
+    
+  env.getEnvironment().each { name, value -> println "Name: $name -> Value $value" }
+    
   println "onCommit ${args}"
 
   println "_________________________________"
