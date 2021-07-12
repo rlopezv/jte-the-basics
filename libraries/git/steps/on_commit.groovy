@@ -1,5 +1,9 @@
 void call(Map args = [:], body){
 
+  println "_________________________________"
+  println "onCommit ${args}"
+  println "_________________________________"
+  
   // do nothing if not commit
   if (!env.GIT_BUILD_CAUSE.equals("commit")) 
     return
