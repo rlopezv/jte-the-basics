@@ -1,5 +1,5 @@
 continuous_integration()
 
-on_merge to: feature, {
+on_commit to: feature, {
   deploy_to prod
 }
