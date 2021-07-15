@@ -12,7 +12,7 @@ steps{
     }
     newman_test {
         stage = "Newman Test"
-        image = "postman/newman:alpine"
+        image = "postman/newman"
         command = "run https://www.getpostman.com/collections/0d0350a9a89d39fb6361"
     }
 }
