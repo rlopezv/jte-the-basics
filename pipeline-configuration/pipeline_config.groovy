@@ -13,7 +13,7 @@ steps{
     newman_test {
         stage = "Newman Test"
         image = "postman/newman:alpine"
-        command = "newman run https://www.getpostman.com/collections/0d0350a9a89d39fb6361"
+        command = "https://www.getpostman.com/collections/0d0350a9a89d39fb6361"
     }
 }
 
@@ -29,6 +29,7 @@ steps{
 
 stages{
     continuous_integration{
+        newman_test
         docker_test
         build
         static_code_analysis
