@@ -2,6 +2,7 @@
     config
     logs
     sonarqube
+    maven
 }
 
 steps{
