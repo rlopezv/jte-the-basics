@@ -29,7 +29,6 @@ steps{
 
 stages{
     continuous_integration{
-        newman_test 
         docker_test
         build
         static_code_analysis
